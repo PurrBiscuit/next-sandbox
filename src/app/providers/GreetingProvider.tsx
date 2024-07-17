@@ -19,7 +19,6 @@ export const GreetingProvider = ({
     const [greeting, setGreeting] = useState(localStorage.getItem(greetingKey) || 'Hello World');
 
     const setGreetingAndStore = (greeting: string) => {
-        console.log('setting greeting to', greeting);
         setGreeting(greeting);
         localStorage.setItem(greetingKey, greeting);
     }
